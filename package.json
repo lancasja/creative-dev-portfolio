@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "http://lancasja.github.io/creative-dev-portfolio",
   "scripts": {
-    "clean": "rm -rf storybook-static node_modules package-lock.json && npm i",
+    "clean": "rm -rf storybook-static .cache node_modules package-lock.json && npm i",
     "start": "snowpack dev",
     "build": "snowpack build",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -33,6 +33,7 @@
     "snowpack": "^3.8.8"
   },
   "dependencies": {
+    "mapbox-gl": "^2.8.0",
     "p5": "^1.4.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
